@@ -1,0 +1,34 @@
+--1. SELECT * FROM Customers
+
+--2. SELECT * FROM CUSTOMERS WHERE City = 'London' 
+-- Or City = 'Paris';
+
+--return one column that has cities
+--3. SELECT DISTINCT City FROM Customers WHERE City IS NOT NULL
+
+--4. SELECT DISTINCT FirstName FROM Employees ORDER BY FirstName;
+
+--5. SELECT AVG(Salary) FROM Employees,
+
+--6. WHERE Salary = (SELECT MAX(Salary) FROM Employees) <CANT COMPLETE>
+
+
+--7. SELECT * FROM Employees Where Notes LIKE '%ba%'; --% means something like a word or number is infront or behind "ba"
+
+--8. SELECT DISTINCT OrderId, SUM(UnitPrice * Quantity * (1 - Discount)) AS Total FROM [Order Details] GROUP BY OrderID
+
+ --9. SELECT * FROM Employees WHERE HireDate BETWEEN '01/01/1994' AND GETDATE();
+
+--10. SELECT DATEDIFF(YEAR,HireDate,'08/13/2019') FROM Employees
+
+--11. SELECT * FROM PRODUCTS ORDER BY UnitPrice  ASC 
+-- SELECT * FROM PRODUCTS ORDER BY UnitPrice  DESC
+
+--12.SELECT * FROM Products WHERE UnitsInStock < 6
+
+--13. SELECT * FROM Products WHERE Discontinued = 'true'; --displays all discontinued for products
+--14. SELECT*FROM Products WHERE ProductNAME LIKE '%tofu%'
+--15. SELECT ProductName FROM Products WHERE UnitPrice=(SELECT MAX(UnitPrice) FROM Products)
+--16. SELECT * FROM Employees WHERE HireDate > '01/01/1994'
+--17. SELECT*FROM Employees WHERE TitleOfCourtesy LIKE 'm%s.';
+--18. SELECT*FROM Employees WHERE HomePhone LIKE '%206%';
